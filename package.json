@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+
+    "test:desktop": "playwright test test-vizual-desktop-1920x1080.spec.ts --config=playwright.config.desktop.ts",
+    "test:mobile": "playwright test test-vizual-mobile.spec.ts --config=playwright.config.mobile.ts",
+    "test:all": "npm run test:desktop && npm run test:mobile"
+
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
